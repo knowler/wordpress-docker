@@ -1,0 +1,20 @@
+{
+    "name": "knowler/wordpress-docker",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nathan Knowler",
+            "email": "nathan@knowler.me"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.6"
+    },
+    "extra": {
+      "installer-paths": {
+        "plugins/{$name}/": ["type:wordpress-plugin"],
+        "themes/{$name}/": ["type:wordpress-theme"]
+      }
+    }
+}
